@@ -6,7 +6,7 @@ Feature: List food courts around me
 
 Background: Food courts have been added to database
 
-  Given the following movies exist:
+  Given the following Food courts exist in database:
   | Food Courts                   | Distance  |    
   | marketplace                   | 0.1 miles |
   | Hinman                        | 0.2 miles |
@@ -17,8 +17,8 @@ Background: Food courts have been added to database
 
 Scenario:  List Food courts around me
   When I enter any food item like Pizza,  burger, coffee in the search box
-  And  I press "Search"
-  Then I should see "A list of Food Courts around"
+  And  I press "Rate"
+  Then I should see "Rate page with rate and review text field."
   And  I should see " a max of 10 food outlets listed in one page"
 
 Scenario:  List Food courts in an increasing order of distance
