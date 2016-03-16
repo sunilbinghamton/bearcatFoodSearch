@@ -4,6 +4,13 @@ Feature: signing in to Bearcat food search
  So that I can rate the food in the variety of outlets
  I would want to create a profile by signing up 
  
+ Background: Login details have been added to the database
+   
+   Given the following login details exist in database:
+  | Username                      | Password  |    
+  | admin                         | head1     |
+  | user1                         | food12    |
+ 
  Scenario: create a login profile
   When I click on the "Login" button
   Then I should see login page
@@ -20,3 +27,5 @@ Feature: signing in to Bearcat food search
    And  I should create a "Username"
    And  i should create a "password"
    And then click on the "Create Profile" to login
+
+
