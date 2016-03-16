@@ -11,6 +11,8 @@ Feature: signing in to Bearcat food search
   | admin                         | head1     |
   | user1                         | food12    |
  
+ And I am the Login page
+ 
  Scenario: create a login profile
   When I click on the "Login" button
   Then I should see login page
