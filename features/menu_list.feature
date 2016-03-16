@@ -20,6 +20,16 @@ Scenario:  List the menu of the selected outlet
   Then I should see "A list of menu items for that outlet "
   And  I should see " a max of 10 menu items listed in one page with price and rating for each of the menu item"
 
+Scenario:  Search for the food item in the menu
+  When I name of the food item
+  And  click on search icon
+  Then I should see the list of food item that correspond to entered name 
+
+Scenario:  Search for the food item in the menu & it is not in the list
+  When I name of the food item
+  And  click on search icon
+  Then I should see message "The item name is not listed."
+
 Scenario:  List the menu of the selected outlet and no menu is exists
   When I select a food outlet
   And  There is no menu item listed for that outlet
