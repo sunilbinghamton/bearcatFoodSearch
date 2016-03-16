@@ -17,8 +17,8 @@ Background: Food courts have been added to database
 
 Scenario:  List Food courts around me
   When I enter any food item like Pizza,  burger, coffee in the search box
-  And  I press "Search"
-  Then I should see "A list of Food Courts around"
+  And  I press "Rate"
+  Then I should see "Rate page with rate and review text field."
   And  I should see " a max of 10 food outlets listed in one page"
 
 Scenario:  List Food courts in an increasing order of distance
