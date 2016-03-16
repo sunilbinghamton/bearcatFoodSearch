@@ -6,7 +6,7 @@ Feature: List food courts around me
 
 Background: Food courts have been added to database
 
-  Given the following movies exist:
+  Given the following Food courts exist in database:
   | Food Courts                   | Distance  |    
   | marketplace                   | 0.1 miles |
   | Hinman                        | 0.2 miles |
